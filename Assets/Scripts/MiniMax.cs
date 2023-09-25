@@ -3,22 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiniMax : MonoBehaviour
+public static class MiniMax
 {
-    int miniMax(int depth, int index, bool isMax, int scores[], int h)
+    public static int miniMax()
     {
-        if (depth == h)
+        if (/*is leaf*/)
         {
-            return scores[index];
+            return 0/*leaf*/;
         }
 
-        if (isMax)
+        if (/*Maximizing move*/)
         {
-            return Math.Max(miniMax(depth + 1; index * 2, false, scores, h), miniMax(depth + 1, index * 2 + 1, false, scores, h));
+            //find maximum value
+            //for loop - check left and right
+            //if beta <= alpha - break
+            //return Math.Max(miniMax(depth + 1; index * 2, false, scores, h), miniMax(depth + 1, index * 2 + 1, false, scores, h));
         }
+        //if minimizing move
         else
         {
-            return Math.Min(miniMax(depth + 1; index * 2, true, scores, h), miniMax(depth + 1, index * 2 + 1, true, scores, h))
+            //find minimum value
+            //for loop - check left and right
+            //if beta <= alpha - break
+            //return Math.Min(miniMax(depth + 1; index * 2, true, scores, h), miniMax(depth + 1, index * 2 + 1, true, scores, h));
         }
     }
 
