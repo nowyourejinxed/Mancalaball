@@ -1,10 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+//Author: Sabrina Jackson
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+//1-6 player 1 store = 7
+//8-13 player 2/AI store = 14
+    [SerializeField] private GameObject[] Gameboard;
+    
     void Start()
     {
         
